@@ -100,9 +100,9 @@ cd $ZOO_BUILD_DIR/zoo-services/gdal/warp/ \
 cd $ZOO_BUILD_DIR/zoo-services/hello-py/ \
   && cp cgi-env/*.* $CGI_DIR/ || exit 1
 
-cd $ZOO_BUILD_DIR/zoo-services/hello-fortran/ \
-  && patch Makefile < /opt/makefile.patch \
-  && patch service.f < /opt/service.patch \
+rm -rf $ZOO_BUILD_DIR/zoo-services/hello-fortran \
+  && mv /opt/hello-fortran $ZOO_BUILD_DIR/zoo-services/hello-fortran \
+  && cd $ZOO_BUILD_DIR/zoo-services/hello-fortran/ \
   && make \
   && cp cgi-env/*.* $CGI_DIR/ || exit 1
 

@@ -11,8 +11,9 @@ ENV WWW_DIR /var/www/html
 
 
 ADD build-script.sh /opt
-ADD makefile.patch /opt
-ADD service.patch /opt
+# ADD makefile.patch /opt
+# ADD service.patch /opt
+COPY hello-fortran /opt/hello-fortran
 
 RUN chmod +x /opt/build-script.sh \
   && sync \
