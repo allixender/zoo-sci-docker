@@ -1,0 +1,11 @@
+--- service.f	2017-01-10 16:53:33.195696077 +1300
++++ service.new.f	2017-01-10 17:00:16.427211078 +1300
+@@ -3,7 +3,7 @@
+ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+        Integer FUNCTION HELLOF(zoo_main_cfg,zoo_inputs,zoo_outputs)
+      & RESULT (R)
+-       Integer R, ls, iLenStr
++       Integer ls, iLenStr
+        CHARACTER*(1024) zoo_main_cfg(10,30),zoo_inputs(10,30),
+      & zoo_outputs(10,30)
+         CHARACTER*(1024) TMP

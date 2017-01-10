@@ -1,0 +1,8 @@
+--- Makefile	2017-01-09 16:53:29.575476077 +1300
++++ Makefile.new	2017-01-10 17:00:42.110046077 +1300
+@@ -1,4 +1,4 @@
+-cgi-env/service.zo: servive.for
++cgi-env/service.zo: service.f
+ 	gfortran -shared -fpic -o cgi-env/fortran_hello.zo ./service.f
+ 
+ clean:
