@@ -6,7 +6,7 @@
  storeSupported = true
  statusSupported = true
  serviceProvider = fortran_hello.zo
- serviceType = C
+ serviceType = C-FORTRAN
  <MetaData>
    title = Hello Fortran Demo
  </MetaData>
