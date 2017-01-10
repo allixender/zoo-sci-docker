@@ -51,7 +51,7 @@ svn checkout http://svn.zoo-project.org/svn/trunk/zoo-project/ $ZOO_BUILD_DIR \
   --with-xml2config=/usr/bin/xml2-config \
   --with-pyvers=2.7 \
   --with-js=/usr \
-  --with-saga=/usr \
+  --with-cgal \
   && make && make install || exit 1
 
 # install zcfg and services after zoo kernel build
