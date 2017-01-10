@@ -83,7 +83,6 @@ cd $ZOO_BUILD_DIR/zoo-services/gdal/grid/ \
   && cp cgi-env/*.* $CGI_DIR/ || exit 1
 
 cd $ZOO_BUILD_DIR/zoo-services/gdal/ndvi/ \
-  && make \
   && cp cgi-env/*.* $CGI_DIR/ || exit 1
 
 cd $ZOO_BUILD_DIR/zoo-services/gdal/profile/ \
