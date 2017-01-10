@@ -101,6 +101,7 @@ cd $ZOO_BUILD_DIR/zoo-services/hello-py/ \
   && cp cgi-env/*.* $CGI_DIR/ || exit 1
 
 cd $ZOO_BUILD_DIR/zoo-services/hello-fortran/ \
+  && ln service.f service.for \
   && make \
   && cp cgi-env/*.* $CGI_DIR/ || exit 1
 
