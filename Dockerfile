@@ -12,7 +12,7 @@ ENV WWW_DIR /var/www/html
 
 ADD build-script.sh /opt
 ADD makefile.patch /opt
-ADD srvice.patch /opt
+ADD service.patch /opt
 
 RUN chmod +x /opt/build-script.sh \
   && sync \
